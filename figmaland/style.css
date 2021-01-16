@@ -1,5 +1,7 @@
 /**** Обнуляющие стили ****/
 
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -35,6 +37,11 @@ select {
 
 
 /**** Обнуляющие стили ****/
+
+
+
+
+
 
 body {
     font-family: 'Graphik';
@@ -78,7 +85,8 @@ body {
     content: "";
     width: 100%;
     height: 3px;
-    background-color: #fff;;
+    background-color: #fff;
+    ;
     display: block;
     transform: translate(-101%);
     transition: 0.3s linear;
@@ -97,6 +105,131 @@ body {
 .button:hover {
     border-color: #4452FE;
 }
+
+
+
+
+
+/* NavBurger */
+
+
+
+
+.hamburger-menu {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+    position: fixed;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    width: 70%;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    transform: rotate(90deg);
+    top: 0;
+    width: 100%;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu__btn > span {
+    width: 67%;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: flex;
+    right: 0px;
+    flex-direction: row-reverse;
+    position: absolute;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -13px;
+    width: 150%;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 13px;
+    width: 50%;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #181818;
+    border-left: 1px solid #989898;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 9;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Graphik';
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #4452FE;
+}
+
+.menu__login {
+    display: none;
+}
+
+
+
+
+/* NavBurger */
+
+
+
+
 
 .title {
     display: flex;
@@ -477,7 +610,19 @@ body {
 }
 
 
+
+
+
+
+
+
 /**** MEDIA ****/
+
+
+
+
+
+
 
 @media (min-width: 2000px) {
     .margin_page {
@@ -557,6 +702,9 @@ body {
     }
     .page_title {
         padding: 0 50px;
+    }
+    .hamburger-menu {
+        display: block;
     }
     .main_content {
         overflow: hidden;
@@ -756,6 +904,9 @@ body {
 @media (max-width: 600px) {
     .login_button {
         display: none;
+    }
+    .menu__login {
+        display: block;
     }
 }
 
