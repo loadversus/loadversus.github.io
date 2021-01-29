@@ -430,3 +430,10 @@ body {
         margin-left: 18%;
     }
 }
+
+
+@media (max-width: 500px) {
+    body {
+        width: 500px;
+    }
+}
