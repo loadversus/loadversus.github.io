@@ -1,0 +1,63 @@
+.nav_links a.is_active {
+    color: #FFFFFF;
+}
+
+
+
+
+
+/**** Выпадающее меню ****/
+
+.nav__link {
+    position: relative;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  position: absolute;
+  background: #232323;
+border-radius: 0px 0px 15px 15px;
+    width: 307px;
+    height: 500px;
+  z-index: -1;
+    left: -40px;
+    top: -150px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 50px;
+    align-items: flex-start;
+        justify-content: flex-end;
+}
+
+
+.dropdown-content a {
+    font-family: 'Noto Sans', sans-serif;
+  color: #8E8E8E;
+    font-size: 20px;
+  margin-bottom: 15px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+  display: block;
+}
+
+
+.dropdown-content a:hover {color: #fff;}
+
+
+.dropdown:hover .dropdown-content {visibility: visible;}
+
+
+.dropdown:hover .dropbtn {background-color: none;}
+
+
+/**** Выпадающее меню ****/
+
+

@@ -1,0 +1,284 @@
+@media (max-width: 1730px) {
+
+    .section {
+        padding: 0 50px;
+    }
+
+    .section__header {
+        padding: 50px 113px;
+    }
+
+    .logo {
+        margin-right: 50px;
+    }
+
+    .advantages {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .advantages__block {
+        margin: 0;
+    }
+
+    .logos__container {
+        column-gap: 30px;
+    }
+
+    .articles__container {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .article {
+        max-width: 600px;
+    }
+
+    .article img {
+        width: 600px;
+    }
+}
+
+
+@media (max-width: 1620px) {
+    .brand__block {
+        width: 200px;
+        height: 170px;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .nav_links a {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 35px;
+    }
+
+    .section__postitle {
+        font-size: 20px;
+    }
+
+    .advantages__bg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .advantages__block img {
+        width: 40px;
+    }
+
+    .advantages__block h5 {
+        font-size: 20px;
+    }
+
+    .advantages__block p {
+        font-size: 17px;
+    }
+
+    .swiper-container__01 {
+        min-width: 500px;
+        height: 400px;
+    }
+
+    .swiper-slide img {
+        width: 711px;
+    }
+}
+
+@media (max-width: 1379px) {
+
+    .article h4 {
+        font-size: 20px;
+    }
+
+    .article p {
+        font-size: 17px;
+    }
+
+    .article img {
+        width: 400px;
+    }
+    .article {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+}
+
+@media (max-width: 1280px) {
+    .section__header {
+        padding: 45px;
+    }
+
+    .logos__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brands__screen_btn {
+        align-self: center;
+    }
+
+    .brand__block {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .nav_links {
+        display: none;
+    }
+
+    .section__header {
+        justify-content: flex-start;
+    }
+
+    .info {
+        margin-right: 50px;
+    }
+
+    .categories__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories__nav__block {
+        margin-bottom: 110px;
+    }
+
+    .smart__watch__photo img {
+        width: 300px;
+    }
+
+    .advantages {
+        justify-content: space-around;
+        margin-bottom: 40px;
+}
+
+    .advantages__block {
+        margin-bottom: 40px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .banner__screen_text {
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .swiper__text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .swiper-container__01 {
+        width: 111%;
+    }
+
+    .review__banner {
+        padding: 0 50px;
+    }
+
+    .articles__container {
+        flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
+
+    }
+
+    .footer__flexbox {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__buttons {
+        align-items: flex-start;
+    }
+
+    td, th {
+        font-size: 12px;
+    }
+
+    .pg2__banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner__pg2__block {
+        margin-bottom: 40px;
+    }
+
+    .page__two__banner {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 830px) {
+    .main__title {
+        font-size: 50px;
+    }
+
+    .main__postitle {
+        font-size: 22px;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    .section__postitle {
+        font-size: 17px;
+    }
+
+    .advantages {
+        justify-content: space-between;
+    }
+
+    .advantages__block {
+        text-align: center;
+        align-items: center;
+    }
+
+    .btn__text {
+        font-size: 17px;
+    }
+
+    .banner__btn {
+        height: 56px;
+    }
+
+    .review__banner {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .review__banner__block {
+        padding: 40px 0;
+    }
+
+    .table__item {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 650px) {
+    .table__item {
+        padding-left: 20px;
+    }
+
+    td, th {
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+}
