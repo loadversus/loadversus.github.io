@@ -1,3 +1,4 @@
+/*
 @keyframes tonext {
   75% {
     left: 0;
@@ -27,6 +28,7 @@
     left: 0;
   }
 }
+*/
 
 @keyframes snap {
   96% {
@@ -74,14 +76,23 @@ ol, li {
 }
 
 .carousel {
-  position: relative;
+  /** position: relative; **/
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
     z-index: -1;
+    width: 464px;
+    height: 412px;
+    margin: 100px auto;
+    margin-bottom: 70px;
+
+}
+
+.carousel:focus, .carousel__viewport:focus {
+    outline: none!important;
 }
 
 .carousel__viewport {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   right: 0;
   bottom: 0;
@@ -91,25 +102,27 @@ ol, li {
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-    width: 452px;
-    height: 297px;
-    margin: 100px auto;
-    margin-bottom: 70px;
-    
+    height: 100%;
+
 }
 
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #f99;
+
   counter-increment: item;
 }
 
+
+/*
 .carousel__slide:nth-child(even) {
   background-color: #99f;
 }
 
+
+
+/*
 .carousel__slide:before {
   content: counter(item);
   position: absolute;
@@ -118,7 +131,7 @@ ol, li {
   transform: translate3d(-50%,-40%,70px);
   color: #fff;
   font-size: 2em;
-}
+} */
 
 .carousel__snapper {
   position: absolute;
@@ -151,6 +164,7 @@ ol, li {
 .carousel:hover .carousel__snapper,
 .carousel:focus-within .carousel__snapper {
   animation-name: none;
+  outline: none;
 }
 
 .carousel__navigation {
@@ -184,23 +198,27 @@ ol, li {
 .carousel__next {
   position: absolute;
   top: 0;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
   font-size: 0;
   outline: 0;
-    background: #fff;
 }
 
 .carousel::before,
 .carousel__prev {
-  left: -1rem;
+  left: 0;
+
 }
 
 .carousel::after,
 .carousel__next {
-  right: -1rem;
+  right: 0;
+
+}
+
+.carousel__prev {
+
 }
 
 .carousel::before,

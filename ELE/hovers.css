@@ -4,8 +4,6 @@
 
 
 
-
-
 /**** Выпадающее меню ****/
 
 .nav__link {
@@ -59,5 +57,99 @@ border-radius: 0px 0px 15px 15px;
 
 
 /**** Выпадающее меню ****/
+
+
+
+
+
+
+/**** Стили при наведении ****/
+
+
+.social__link svg path:hover {
+    fill: #F7E842;
+}
+
+.social__svg path {
+    transition: fill .8s;
+}
+
+.btn, .btn__text, .btn__op {
+    transition: background .4s, color .5s, border .3s;
+}
+
+.btn:hover {
+    background: #8E8E8E;
+}
+
+.btn__text:hover {
+    color: #fff;
+}
+
+.btn__op:hover {
+    border-color: #232323;
+    background: none;
+}
+
+.btn_op_text:hover {
+    color: #232323;
+}
+
+.categories__nav__block, .categories__nav__block a, .categories__nav__block::before {
+    transition: all .6s;
+}
+
+.categories__nav__block a:hover {
+    color: #232323;
+}
+
+
+.btn__white:hover, .btn__white > .btn__text:hover {
+    background: #F7E842;
+    color: #000;
+    transition: background .8s;
+}
+
+.advantages__bg {
+    transition: background .5s;
+}
+
+.advantages__bg:hover {
+    background: #F7E842;
+}
+
+.footer__btn__text, .footer__btn__white {
+    transition: background .4s, color .3s;
+}
+
+.footer__btn__text:hover {
+    color: #767676;
+
+}
+
+.footer__btn__white:hover {
+     background: none;
+}
+
+.table_link {
+    transition: all .5s;
+}
+
+.table_link:hover {
+    background: rgba(199, 186, 31, 0.5);
+}
+
+.brand__background {
+    transition: background .4s;
+}
+
+.brand__background:hover {
+    background-color: #afafaf;
+}
+
+
+/**** Стили при наведении ****/
+
+
 
 

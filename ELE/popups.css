@@ -3,12 +3,9 @@
 
 
 
-
-
-
-
-.form__popup, .popup__success, repairs__popup__01 {
-    display: none!important;
+.form__popup, .popup__success, .repairs__popup, .date__popup_01, .date__popup_02, .form__popup_02, .popup__success_02 {
+    position: static!important;
+    margin: 150px 0;
 }
 
 
@@ -21,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     position: fixed;
     z-index: 100;
     top: 20%;
@@ -75,7 +72,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     gap: 30px;
 }
 
@@ -93,10 +90,10 @@
     border-color: #F7E842;
     box-sizing: border-box;
     font-family: 'Lora', serif;
-    
+
     line-height: 33px;
     color: #232323;
-   
+
 }
 
 .popup__input::placeholder {
@@ -146,12 +143,25 @@
     font-size: 22px;
     color: #232323;
     padding: 20px 46px;
+    border: none;
 }
 
+.popup__button {
+    transition: background .4s linear;
+}
+
+.popup__button:hover {
+    background: #fff;
+}
 
 
 /**** Form Popup ****/
 
+
+
+
+
+/**** Repairs Popup ****/
 
 
 .popup__success_text {
@@ -159,10 +169,6 @@
 }
 
 
-
-
-
-/**** Repairs Popup ****/
 
 .popup__info {
     display: flex;
@@ -201,7 +207,7 @@
     font-size: 22px;
     line-height: 30px;
     cursor: pointer;
-   
+
 }
 
 
@@ -216,16 +222,447 @@ select:last-of-type {
 }
 
 
-
-
-
-
 /**** Repairs Popup ****/
 
 
 
 
-/**** Popup Adaptive ****/ 
+
+/**** Date Popups ****/
+
+
+
+
+/******** Date Popups ********/
+
+
+
+
+/*
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+*/
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  /** position: relative; **/
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+    z-index: -1;
+    width: 464px;
+    height: 412px;
+    margin: 100px auto;
+    margin-bottom: 70px;
+
+}
+
+.carousel:focus, .carousel__viewport:focus {
+    outline: none!important;
+}
+
+.carousel__viewport {
+  /*position: absolute;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+    height: 100%;
+
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+
+  counter-increment: item;
+}
+
+
+/*
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
+}
+
+
+
+/*
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+} */
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+  outline: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+    width: 40px;
+    height: 40px;
+
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: 0;
+
+}
+
+.carousel::after,
+.carousel__next {
+  right: 0;
+
+}
+
+.carousel__prev {
+
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url(images/icons/Popup__step__arrow_left.svg);
+}
+
+.carousel::after {
+  background-image: url(images/icons/Popup__step__arrow.svg);
+}
+
+
+
+
+/**** Carousel ****/
+
+
+
+/**** Calendar ****/
+
+
+
+
+.calendar {
+    font-family: 'Lora', serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+    height: auto;
+
+}
+
+.calendar__month {
+    width: 83%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+.calendar__head, .calendar__container {
+    background: none!important;
+}
+
+.calendar__container > td:last-of-type {
+    background: none;
+    padding: 0;
+}
+
+
+
+
+
+.calendar__day {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.calendar__td, .calendar__day {
+    padding-bottom: 0!important;
+    padding-top: 0!important;
+}
+
+.calendar__td {
+    padding-right: 10px;
+}
+
+
+
+.calendar__item {
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    color: #232323;
+    margin-bottom: 10px;
+}
+
+.calendar__item.is__active {
+    background: #F7E842;
+}
+
+.calendar__item.is__full {
+    background: #8E8E8E;
+}
+
+.calendar__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+/**** Calendar ****/
+
+
+
+
+.popup__after__text {
+    position: absolute;
+    top: 500px;
+    right: 163px;
+}
+
+.bottom__text {
+    top: 545px;
+    right: 132px;
+}
+
+
+
+.after__text__block {
+    display: flex;
+}
+
+.circle {
+    width: 23px;
+    height: 23px;
+    background: #8E8E8E;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.circle__yellow {
+    background: #F7E842;
+}
+
+.after__text__block h5 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.data__table {
+    margin: 100px 0 50px 0!important;
+}
+
+.date__item {
+    width: 186px!important;
+}
+
+.table__after__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.table__text__flexbox h5 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+
+.table__text__flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.table__text__flexbox:last-of-type {
+    margin: 0;
+}
+
+/******** Date Popups ********/
+
+
+
+
+
+
+
+
+/**** Popup Adaptive ****/
 
 
 @media (max-width: 1272px) {
@@ -234,13 +671,49 @@ select:last-of-type {
     }
 }
 
+
+@media (max-width: 1240px) {
+    .popup__after__text {
+        top: 687px;
+        right: 508px;
+    }
+
+    .bottom__text {
+        top: 727px;
+        right: 477px;
+    }
+}
+
+@media (max-width: 1215px) {
+      .date__item {
+        width: 174px!important;
+    }
+}
+
 @media (max-width: 1100px) {
     .popup__info {
         flex-direction: column;
     }
+
+    .popup__after__text {
+        top: 862px;
+        right: calc(39%);
+    }
+
+    .bottom__text {
+        top: 905px;
+        right: calc(36%);
+    }
+
+    .date__item {
+        width: 90px!important;
+        font-size: 17px!important;
+    }
+
 }
 
-/**** Popup Adaptive ****/ 
+
+/**** Popup Adaptive ****/
 
 
 

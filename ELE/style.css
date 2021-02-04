@@ -111,11 +111,11 @@ body {
 
 }
 
-.social__svg {
+.social__link {
     margin-right: 20px;
 }
 
-.social__svg:last-child {
+.social__link:last-child {
     margin: 0;
 }
 
@@ -864,20 +864,14 @@ tr td:last-of-type {
 
 
 
-/**** Popup Styles  ****/
 
 
+.main__page__slider {
+    display: flex;
+    justify-content: center;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-/**** Popup Styles  ****/
+.main__page__carousel {
+    width: auto!important;
+}
