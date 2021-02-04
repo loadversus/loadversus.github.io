@@ -1,0 +1,251 @@
+
+
+
+
+
+
+
+
+
+.form__popup, .popup__success, repairs__popup__01 {
+    display: none!important;
+}
+
+
+
+/**** Form Popup ****/
+
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    z-index: 100;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    min-height: 975px;
+    height: auto;
+    background: rgb(35, 35, 35);
+    padding: 94px 0 153px 0;
+}
+
+.popup__close__btn {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+.popup__close__btn a svg:hover {
+    transform: scale(1.5);
+    transition: transform .3s;
+}
+
+.popup__inner {
+    text-align: center;
+}
+
+
+.popup__title {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+
+.popup__postitle {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.form__inner {
+    margin-top: 100px;
+}
+
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 30px;
+}
+
+.popup__input {
+    height: 73px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    width: 600px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 22px;
+}
+
+.popup__input:focus {
+    border-color: #F7E842;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    
+    line-height: 33px;
+    color: #232323;
+   
+}
+
+.popup__input::placeholder {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    line-height: 33px;
+    color: #232323;
+    padding-left: 43px;
+}
+
+.popup__checkbox {
+    width: 23px;
+    height: 23px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.popup__checkbox:checked {
+    background: #000;
+}
+
+.checkbox__flexbox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    margin: 30px 0 70px 0;
+}
+
+.privacy__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8E8E8E;
+}
+
+.privacy__text > a {
+    text-decoration: underline;
+    color: #8E8E8E;
+}
+
+.popup__button {
+    background: #F7E842;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+    color: #232323;
+    padding: 20px 46px;
+}
+
+
+
+/**** Form Popup ****/
+
+
+
+.popup__success_text {
+    color: #F7E842;
+}
+
+
+
+
+
+/**** Repairs Popup ****/
+
+.popup__info {
+    display: flex;
+    flex-direction: row;
+    gap: 73px;
+}
+
+.popup__info_step {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.popup__info_step h6 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #8E8E8E;
+}
+
+
+
+.info__active > svg > path {
+    fill: #fff!important;
+}
+
+.info__active h6 {
+    color: #fff;
+}
+
+.popup__select {
+    padding: 0 43px;
+    background: #fff;
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    line-height: 30px;
+    cursor: pointer;
+   
+}
+
+
+option {
+    background: #EDEDED;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+select:last-of-type {
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+/**** Repairs Popup ****/
+
+
+
+
+/**** Popup Adaptive ****/ 
+
+
+@media (max-width: 1272px) {
+    .popup__info {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .popup__info {
+        flex-direction: column;
+    }
+}
+
+/**** Popup Adaptive ****/ 
+
+
+
+
+
+
+
+

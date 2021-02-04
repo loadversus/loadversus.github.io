@@ -1,0 +1,39 @@
+
+.calendar__month {
+    background: rgb(35, 35, 35);
+}
+
+
+.calendar__day {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.calendar__item {
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    color: #232323;
+}
+
+.calendar__item.is__active {
+    background: #F7E842;
+}
+
+.calendar__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
