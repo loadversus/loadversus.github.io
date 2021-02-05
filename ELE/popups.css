@@ -5,6 +5,7 @@
 
 .form__popup, .popup__success, .repairs__popup, .date__popup_01, .date__popup_02, .form__popup_02, .popup__success_02 {
     position: static!important;
+
     margin: 150px 0;
 }
 
@@ -710,6 +711,39 @@ ol, li {
         font-size: 17px!important;
     }
 
+}
+
+@media (max-width: 624px) {
+    .popup__input {
+        width: 355px;
+    }
+
+    .date__item {
+        width: 55px!important;
+        height: 45px;
+        font-size: 10px!important;
+    }
+
+    .popup__title {
+        font-size: 25px;
+    }
+
+    .popup__postitle {
+        font-size: 17px;
+    }
+
+    .popup__info_step h6 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+
+@media (max-width: 420px) {
+    .popup__info_step {
+        padding-left: 30px;
+    }
 }
 
 

@@ -83,7 +83,7 @@
         height: 400px;
     }
 
-    .swiper-slide img {
+    .swiper__banner {
         width: 711px;
     }
 }
@@ -136,6 +136,10 @@
 
     .section__header {
         justify-content: flex-start;
+    }
+
+    .hamburger-menu {
+        display: block;
     }
 
     .info {
@@ -272,7 +276,59 @@
     }
 }
 
+@media (max-width: 700px) {
+        .info a {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .section__title {
+        line-height: 40px;
+    }
+
+    .section__postitle {
+        font-size: 14px;
+    }
+
+    .advantages {
+        justify-content: center;
+    }
+
+    .banner__screen_content {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .info__screen__block {
+        align-items: flex-start;
+        flex-direction: column;
+}
+.info__screen_text {
+     width: 100%;
+}
+
+}
+
+
+
 @media (max-width: 650px) {
+
+    .all__content {
+        overflow-x: hidden;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .social_links {
+        display: none;
+    }
+
     .table__item {
         padding-left: 20px;
     }
@@ -281,4 +337,32 @@
         padding-top: 11px;
         padding-bottom: 11px;
     }
+
+
+    .section {
+      padding: 0 20px;
+    }
+
+    .section__header {
+        padding: 45px;
+    }
+
+    .article img {
+        width: auto;
+    }
+
+
+    .slider__content {
+        background: #c3c3c3;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+
+    .finger__icon {
+        background: #fff url(images/icons/Finger_icon_01.svg) no-repeat center!important;
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
 }

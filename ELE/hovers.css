@@ -3,27 +3,24 @@
 }
 
 
-
 /**** Выпадающее меню ****/
 
 .nav__link {
     position: relative;
 }
 
-
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
-
 .dropdown-content {
-  position: absolute;
-  background: #232323;
-border-radius: 0px 0px 15px 15px;
+    position: absolute;
+    background: #232323;
+    border-radius: 0px 0px 15px 15px;
     width: 307px;
     height: 500px;
-  z-index: -1;
+    z-index: -1;
     left: -40px;
     top: -150px;
     visibility: hidden;
@@ -31,40 +28,33 @@ border-radius: 0px 0px 15px 15px;
     flex-direction: column;
     padding: 0 40px 50px;
     align-items: flex-start;
-        justify-content: flex-end;
+    justify-content: flex-end;
 }
-
 
 .dropdown-content a {
     font-family: 'Noto Sans', sans-serif;
-  color: #8E8E8E;
+    color: #8E8E8E;
     font-size: 20px;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
     margin-right: 0;
     display: flex;
     align-items: center;
-  display: block;
+    display: block;
 }
 
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
 
-.dropdown-content a:hover {color: #fff;}
-
-
-.dropdown:hover .dropdown-content {visibility: visible;}
-
-
-.dropdown:hover .dropbtn {background-color: none;}
+.dropdown:hover .dropbtn {
+    background-color: none;
+}
 
 
 /**** Выпадающее меню ****/
 
 
-
-
-
-
 /**** Стили при наведении ****/
-
 
 .social__link svg path:hover {
     fill: #F7E842;
@@ -74,7 +64,21 @@ border-radius: 0px 0px 15px 15px;
     transition: fill .8s;
 }
 
-.btn, .btn__text, .btn__op {
+.dropdown-content {
+    transition: all .4s;
+}
+
+.nav_links a {
+    transition: opacity .4s;
+}
+
+.nav_links a:hover {
+    opacity: 0.5;
+}
+
+.btn,
+.btn__text,
+.btn__op {
     transition: background .4s, color .5s, border .3s;
 }
 
@@ -95,7 +99,9 @@ border-radius: 0px 0px 15px 15px;
     color: #232323;
 }
 
-.categories__nav__block, .categories__nav__block a, .categories__nav__block::before {
+.categories__nav__block,
+.categories__nav__block a,
+.categories__nav__block::before {
     transition: all .6s;
 }
 
@@ -103,8 +109,13 @@ border-radius: 0px 0px 15px 15px;
     color: #232323;
 }
 
+.banner__socials svg path:hover {
+    fill: #fff;
+    stroke: #747474;
+}
 
-.btn__white:hover, .btn__white > .btn__text:hover {
+.btn__white:hover,
+.btn__white > .btn__text:hover {
     background: #F7E842;
     color: #000;
     transition: background .8s;
@@ -118,17 +129,17 @@ border-radius: 0px 0px 15px 15px;
     background: #F7E842;
 }
 
-.footer__btn__text, .footer__btn__white {
+.footer__btn__text,
+.footer__btn__white {
     transition: background .4s, color .3s;
 }
 
 .footer__btn__text:hover {
     color: #767676;
-
 }
 
 .footer__btn__white:hover {
-     background: none;
+    background: none;
 }
 
 .table_link {
@@ -147,9 +158,15 @@ border-radius: 0px 0px 15px 15px;
     background-color: #afafaf;
 }
 
+.finger__icon {
+    background: url(images/icons/Finger_icon_01.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+}
+
+.finger__icon:hover {
+    background: url(images/icons/Finger_icon_02.svg) no-repeat center;
+}
+
 
 /**** Стили при наведении ****/
-
-
-
-
