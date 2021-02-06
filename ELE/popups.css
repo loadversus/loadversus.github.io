@@ -1,5 +1,12 @@
 
 
+
+input{
+   padding-left: 43px;
+}
+
+
+
 .is-active {
     pointer-events: auto!important;
     opacity: 1!important;
@@ -127,7 +134,6 @@
     font-size: 22px;
     line-height: 33px;
     color: #232323;
-    padding-left: 43px;
 }
 
 .popup__checkbox {
