@@ -654,6 +654,15 @@ ol, li {
 
 /**** Popup Adaptive ****/
 
+
+@media (min-width: 1920px) {
+    .popup {
+        width: 100vw;
+    }
+}
+
+
+
 @media (orientation: landscape) and (max-width: 1000px) {
     .popup {
         height: 100vh;
