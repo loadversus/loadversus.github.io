@@ -36,7 +36,7 @@
     width: 100%;
     height: 100vh;
     background: rgb(35, 35, 35);
-    padding: 94px 0 153px 0;
+    padding-top: 94px;
 
     overflow: auto;
 }
@@ -542,6 +542,8 @@ ol, li {
     font-size: 24px;
     color: #232323;
     margin-bottom: 10px;
+    
+    transition: background .8s;
 }
 
 .calendar__item.is__active {
@@ -550,6 +552,12 @@ ol, li {
 
 .calendar__item.is__full {
     background: #8E8E8E;
+    pointer-events: none;
+}
+
+.calendar__item:hover {
+    background: #00000096;
+    color: #fff;
 }
 
 .calendar__box {
@@ -567,12 +575,12 @@ ol, li {
 
 .popup__after__text {
     position: absolute;
-    top: 500px;
+    bottom: 750px;
     right: 163px;
 }
 
 .bottom__text {
-    top: 545px;
+    bottom: 700px;
     right: 132px;
 }
 
@@ -787,8 +795,6 @@ ol, li {
 
 
 /**** Popup Adaptive ****/
-
-
 
 
 

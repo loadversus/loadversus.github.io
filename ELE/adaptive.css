@@ -50,6 +50,10 @@
     .section__postitle {
         font-size: 20px;
     }
+    
+    .reviews__title::after {
+        left: 29%;
+    }
 
     .advantages__bg {
         width: 100px;
@@ -240,6 +244,10 @@
     .section__title {
         font-size: 28px;
     }
+    
+    .reviews__title::after {
+        left: 23%;
+    }
 
     .section__postitle {
         font-size: 17px;
@@ -325,7 +333,7 @@
         display: none;
     }
 
-    .social_links {
+    .section__header >.social_links {
         display: none!important;
     }
 
@@ -412,6 +420,10 @@
     .banner__screen_text , .reviews__title, .review__banner h3 {
         font-size: 30px;
         text-align: left;
+    }
+    
+    .reviews__title::after {
+        left: 23%;
     }
 
     .main__title {
