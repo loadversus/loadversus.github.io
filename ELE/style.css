@@ -78,7 +78,9 @@ body {
 
 .nav_links {
     position: relative;
+    display: flex;
     z-index: 3;
+    flex-direction: row;
 }
 
 .nav_links a {
@@ -132,6 +134,17 @@ body {
 
 .hamburger-menu {
     display: none;
+}
+
+.mobile__social {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 24px;
+    gap: 20px;
+}
+
+.mobile__info > .menu__item {
+    font-size: 18px;
 }
 
 #menu__toggle {
@@ -812,6 +825,7 @@ body {
 
 .articles__container {
     display: flex;
+    flex-direction: row;
     margin-top: 100px;
     justify-content: center;
     gap: 100px;
@@ -819,7 +833,15 @@ body {
 }
 
 .article {
-    width: 825px;
+    max-width: 600px;
+
+}
+
+.article__image__box {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
 
 }
 
@@ -935,6 +957,12 @@ footer {
 /**** Table styles ****/
 
 
+.table__box {
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    margin: 150px 0;
+}
+
 .table__screen {
     margin-top: 150px;
 }
@@ -944,8 +972,11 @@ table {
   font-family: 'Lora', serif;
   border-collapse: collapse;
   width: 100%;
-    margin: 150px 0;
 
+}
+
+.table__title::after {
+    left: 46%;
 }
 
 td, th {

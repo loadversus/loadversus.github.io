@@ -1,14 +1,23 @@
 
 
+.is-active {
+    pointer-events: auto!important;
+    opacity: 1!important;
+}
 
 
 
 .form__popup, .popup__success, .repairs__popup, .date__popup_01, .date__popup_02, .form__popup_02, .popup__success_02 {
-    position: static!important;
-
-    margin: 150px 0;
+    position: fixed;
+    opacity: 0;
+    transition: opacity .4s;
+    pointer-events: none;
 }
 
+
+.no-scroll {
+    overflow: hidden;
+}
 
 
 /**** Form Popup ****/
@@ -20,30 +29,46 @@
     align-items: center;
     justify-content: center;
 
-    position: fixed;
     z-index: 100;
-    top: 20%;
+    bottom: 50%;
+    transform: translateY(50%);
     left: 0;
     width: 100%;
-    min-height: 975px;
-    height: auto;
+    height: 70vh;
     background: rgb(35, 35, 35);
     padding: 94px 0 153px 0;
+
+    overflow: auto;
 }
 
-.popup__close__btn {
+
+
+
+.popup__cross {
     position: absolute;
+    display: flex;
     top: 35px;
     right: 35px;
+
+    background-image: url(images/icons/Popup_close_icon.svg);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.popup__close__btn a svg:hover {
+.popup__cross:hover {
     transform: scale(1.5);
     transition: transform .3s;
 }
 
+
 .popup__inner {
     text-align: center;
+    overflow: auto;
+
 }
 
 
@@ -145,11 +170,10 @@
     color: #232323;
     padding: 20px 46px;
     border: none;
-}
-
-.popup__button {
+    color: #232323;
     transition: background .4s linear;
 }
+
 
 .popup__button:hover {
     background: #fff;
@@ -229,8 +253,6 @@ select:last-of-type {
 
 
 
-/**** Date Popups ****/
-
 
 
 
@@ -238,38 +260,10 @@ select:last-of-type {
 
 
 
+/**** Carousel ****/
 
-/*
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
 
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-*/
+
 
 @keyframes snap {
   96% {
@@ -355,24 +349,11 @@ ol, li {
   counter-increment: item;
 }
 
-
-/*
-.carousel__slide:nth-child(even) {
-  background-color: #99f;
+.carousel__slide:focus {
+    border: none;
+    outline: none;
 }
 
-
-
-/*
-.carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-40%,70px);
-  color: #fff;
-  font-size: 2em;
-} */
 
 .carousel__snapper {
   position: absolute;
@@ -665,23 +646,32 @@ ol, li {
 
 /**** Popup Adaptive ****/
 
+@media (orientation: landscape) and (max-width: 1000px) {
+    .popup {
+        height: 100vh;
+        padding: 20px;
+    }
+}
 
 @media (max-width: 1272px) {
     .popup__info {
         gap: 20px;
     }
+
 }
 
 
 @media (max-width: 1240px) {
     .popup__after__text {
-        top: 687px;
-        right: 508px;
+        position: static;
     }
 
     .bottom__text {
-        top: 727px;
-        right: 477px;
+        margin-top: 12px;
+    }
+
+    .date__popup_01 > .popup__inner > .popup__button {
+        margin-bottom: 30px;
     }
 }
 
@@ -718,10 +708,15 @@ ol, li {
         width: 355px;
     }
 
+    .popup__cross {
+        top: 10px;
+        right: 10px;
+    }
+
     .date__item {
         width: 55px!important;
         height: 45px;
-        font-size: 10px!important;
+        font-size: 13px!important;
     }
 
     .popup__title {
@@ -736,14 +731,58 @@ ol, li {
         font-size: 20px;
         line-height: 25px;
     }
+
 }
 
+
+@media (max-width: 500px) {
+    .popup {
+        height: 100vh;
+        padding: 30px 0;
+    }
+
+    .calendar__td {
+        padding: 0;
+    }
+
+    .calendar__item {
+        margin: 2px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel {
+        width: auto;
+    }
+
+    .table__after__text {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .table__text__flexbox {
+        margin-right: 0;
+        margin-bottom: 20px;
+
+    }
+
+    .table__text__flexbox h5,
+    .after__text__block h5 {
+        font-size: 16px;
+    }
+
+    .privacy__text {
+        font-size: 13px;
+    }
+}
 
 
 @media (max-width: 420px) {
     .popup__info_step {
         padding-left: 30px;
     }
+
+
 }
 
 

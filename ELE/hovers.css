@@ -58,10 +58,19 @@
 
 .social__link svg path:hover {
     fill: #F7E842;
+
 }
 
 .social__svg path {
     transition: fill .8s;
+}
+
+.social__svg:hover {
+    transform: scale(1.1);
+}
+
+.social__svg {
+    transition: transform .3s linear;
 }
 
 .dropdown-content {
@@ -77,13 +86,27 @@
 }
 
 .btn,
-.btn__text,
 .btn__op {
-    transition: background .4s, color .5s, border .3s;
+    transition: background .4s, color .4s, border .3s;
+}
+
+.btn__text {
+    transition: background 0.1s, color .4s;
 }
 
 .btn:hover {
     background: #8E8E8E;
+}
+
+.btn {
+    transition: transform .4s;
+}
+
+.main__screen_content > .btn:hover,
+.banner__btn:hover,
+.brands__screen_btn:hover,
+footer > .btn:hover {
+    transform: scale(1.1);
 }
 
 .btn__text:hover {
@@ -105,9 +128,16 @@
     transition: all .6s;
 }
 
+.categories__nav__block:hover::before {
+    transform: scale(1.1);
+}
+
 .categories__nav__block a:hover {
     color: #232323;
+    transform: scale(1.1);
 }
+
+
 
 .banner__socials svg path:hover {
     fill: #fff;
@@ -121,12 +151,19 @@
     transition: background .8s;
 }
 
+.review__btn {
+    width: 244px;
+    background-color: #fff;
+    margin: 0;
+}
+
 .advantages__bg {
     transition: background .5s;
 }
 
 .advantages__bg:hover {
     background: #F7E842;
+        background: linear-gradient(360deg, #fff, #F7E842);
 }
 
 .footer__btn__text,
@@ -167,6 +204,17 @@
 .finger__icon:hover {
     background: url(images/icons/Finger_icon_02.svg) no-repeat center;
 }
+
+
+.article__image__box > img {
+    transition: transform 0.4s;
+}
+
+
+.article__image__box > img:hover {
+    transform: scale(1.1);
+}
+
 
 
 /**** Стили при наведении ****/
