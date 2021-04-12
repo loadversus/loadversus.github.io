@@ -1,0 +1,192 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  #head .logo{
+	background: url(../img/logo.png) no-repeat left 15px;
+	padding-top:20px;
+	background-size: contain;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.wrapp{
+		min-width:745px;
+	}
+	.wrapp1{
+		width:745px;
+	}
+	.formPresent{
+		position:static;
+	}
+	.formWrapper{
+		margin:0px auto;
+	}
+	#menu .orderPhone{
+		width:100%;
+		padding-left:40px;
+		margin:0px auto;
+		border:1px solid black;
+	}
+	.orderPhone a{
+		margin:auto;
+		width:240px;
+	}
+	#head p{
+	padding-top:0px;
+	margin:-10px 0px 0px 25px;
+	}
+	#head div{
+	min-height:10px;
+	}
+	#head .logo{
+		padding-top:20px;
+		min-height:100px;
+	
+	}
+	#head .phone{
+	padding-top:20px;
+	padding-bottom:10px;
+	text-align:center;
+	margin-left:90px;
+	}
+	#menu nav{
+	padding:0px;
+	height:49px;
+	background: none;
+
+	}
+
+	.yellowBg{
+		background: none;
+	}
+	.gallaryBox{
+	height:1124px;
+	padding:0px;
+	}
+	.gallaryParam{
+	min-width:400px;
+	}
+
+	.gallaryParamWrapp3{
+		margin-left:0px;
+	}
+	.gallaryParamWrapp1, .gallaryParamWrapp2, .gallaryParamWrapp3{
+
+		min-height:70px;
+	}
+	.gallaryParamWrapp1 div, .gallaryParamWrapp2 div, .gallaryParamWrapp3 div{
+	float:left;
+	margin-left:20px;
+	}
+	.gallaryParam img{
+	float:left;
+	}
+	.littleImg img{
+	display:none;
+	}
+	.detailProject{
+		padding:0px 20px;
+	}
+	.recall img{
+		margin:0px auto;
+		text-align:center;
+	}
+	.recall section{
+		margin:15px auto;
+		float:left;
+		width:300px;
+		margin:0px 0px 0px 10px;
+	}
+	.recall a.socialRecall{
+		padding-left:40px;
+		margin:0px;
+		line-height:30px;
+		background:url(../img/vk.png) no-repeat left center;
+	}
+	.partners{
+		text-align:center;
+		width:90%;
+		margin:0px auto;
+	}
+	#compass{
+	left:435px;
+
+}
+	#pen{
+		left:500px;
+	}
+	.mainCaption{
+		
+	}
+	.vyborKlientov{
+		background-position:center 175px !important;
+	}
+	.otherUslugiBox{
+	margin:0px auto;
+	}
+	/*Вращающиеся блоки*/
+		.border{
+		width:90%;
+		padding:0px;
+
+	}
+
+	.border p{
+		font-size: 30px;
+		color:white;
+		position:relative;
+	}
+	.stylishDesign, .goodRepair, .sureznoRepair{
+		position:relative;
+	}
+	.stylishDesign a, .goodRepair a, .sureznoRepair a{
+		top:380px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

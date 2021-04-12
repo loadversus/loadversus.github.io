@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/art-alliance.hit-tovar.top/webstat"
+AuthUserFile /var/www/an.pel/data/etc/34481443.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

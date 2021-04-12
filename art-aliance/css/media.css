@@ -1,0 +1,475 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  #head .logo{
+	background: url(../img/logo.png) no-repeat left 15px;
+	padding-top:20px;
+	background-size: contain;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	body{
+		overflow-x:hidden;
+	}
+	header.wrapp{
+		       background: url(../img/brick.jpg) top center!important;
+			background-size: cover;
+	}
+	#head .phone a{
+		    font-weight: bold;
+    text-shadow: 1px 1px 2px #fff;
+	}
+	#head .phone div{
+		font-size: 12px;
+    min-height: 1px;
+    text-shadow: 1px 1px 2px #fff;
+	}
+	#menu{
+		display: none;
+	}
+	#menu.active{
+		position: fixed;
+		top: 0px;
+		padding-top: 60px;
+		background: #333333;
+		display: block;
+		z-index: 9998;
+	}
+	#menu.active ul {
+		min-width: auto;
+		width: 100%;
+		position: absolute;
+		background: #333333;
+	}
+	#menu.active li {
+		float: none !important;
+	}
+	.mobile-menu{
+		z-index: 9999;
+		width: 50px;
+		height: 50px;
+		background: black;
+		border-radius: 10px;
+		right: 20px;
+		cursor: pointer;
+		top: 20px;
+		position: fixed;
+	}
+	.mobile-menu i{
+		height: 5px;
+		background: #fff;
+		position: absolute;
+		padding: 0px 14px;
+		left: 10px;
+	}
+	.mobile-menu i:nth-child(1){
+		top: 10px;
+	}
+	.mobile-menu i:nth-child(2){
+		top: 20px;
+	}
+	.mobile-menu i:nth-child(3){
+		top: 30px;
+	}
+	.wrapp{
+		min-width:745px;
+	}
+	.wrapp1{
+		width:745px;
+	}
+	.formPresent{
+		position:static;
+	}
+	.formWrapper{
+		margin:0px auto;
+		max-width: 310px;
+	}
+	#menu .orderPhone{
+		width:100%;
+		padding-left:40px;
+		margin:0px auto;
+		border:1px solid black;
+	}
+	.orderPhone a{
+		margin:auto;
+		width:240px;
+	}
+	#head p{
+	padding-top:0px;
+	margin: -10px 0px 0px 0px;
+	}
+	#head div{
+	min-height:10px;
+	}
+	#head .logo{
+	padding-top: 20px;
+    min-height: 100px;
+    width: 200px;
+    background-size: 100%;
+    margin: auto;
+	    margin-top: -10px;
+	
+	}
+	#head .phone{
+	padding-top:20px;
+	padding-bottom:10px;
+	text-align:center;
+	margin-left:90px;
+	}
+	#menu nav{
+	padding:0px;
+	height:49px;
+	background: none;
+
+	}
+
+	.yellowBg{
+		background: none;
+	}
+	.gallaryBox{
+	height:1124px;
+	padding:0px;
+	}
+	.gallaryParam{
+	min-width:400px;
+	    min-width: initial;
+	}
+
+	.gallaryParamWrapp3{
+		margin-left:0px;
+	}
+	.gallaryParamWrapp1, .gallaryParamWrapp2, .gallaryParamWrapp3{
+
+		min-height:70px;
+	}
+	.gallaryParamWrapp1 div, .gallaryParamWrapp2 div, .gallaryParamWrapp3 div{
+	float:left;
+	margin-left:20px;
+	}
+	.gallaryParam img{
+	float:left;
+	}
+	.littleImg img{
+	display:none;
+	}
+	.detailProject{
+		padding:0px 20px;
+		padding:0;
+	}
+	.recall img{
+		margin:0px auto;
+		text-align:center;
+	}
+	.recall section{
+		margin:15px auto;
+		float:left;
+		width:300px;
+		margin:0px 0px 0px 10px;
+	}
+	.recall a.socialRecall{
+		padding-left:40px;
+		margin:0px;
+		line-height:30px;
+		background:url(../img/vk.png) no-repeat left center;
+	}
+	.partners{
+		text-align:center;
+		width:90%;
+		margin:0px auto;
+	}
+	#compass{
+	left:435px;
+
+}
+	#pen{
+		left:500px;
+	}
+	.mainCaption{
+		
+	}
+	.vyborKlientov{
+		background-position:center 175px !important;
+	}
+	.otherUslugiBox{
+	margin:0px auto;
+	}
+	/*����������� �����*/
+		.border{
+		width:90%;
+		padding:0px;
+
+	}
+
+	.border p{
+		font-size: 30px;
+		color:white;
+		position:relative;
+	}
+	.stylishDesign, .goodRepair, .sureznoRepair{
+		position:relative;
+	}
+	.stylishDesign a, .goodRepair a, .sureznoRepair a{
+		top:380px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	/*.container-fluid header{
+		background: url(/img/1.jpg) 56% 0% !important;
+	}*/
+	.remontWrapper h1, .remontWrapper p{
+		text-align: center;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	html{
+		overflow-x: hidden;
+	}
+	/* * {
+		width: auto !important;
+		height: auto !important;
+		min-width: auto !important;
+	} */
+	.orderPhone{
+		display: none;
+	}
+	#head p {
+		font-size: 3vw !important;
+	}
+	#head .phone {
+		margin-left: 0px;
+		width: 100% !important;
+	}
+	.wrapp,
+	.wrapp1 {
+		width: auto !important;
+	}
+	#head .col-lg-5 {
+		margin-left: 0px;
+		width: 100% !important;
+	}
+	#advantages * {
+		width: 100% !important;
+	}
+	#advantages img {
+		width: auto !important;
+	}
+	#advantages p {
+		font-size: 2vw !important;
+	}
+	.BigBorder {
+		font-size: 4vw !important;
+		width: 80% !important;
+	}
+	.littleText {
+		font-size: 2.5vw !important;
+		width: 100%;
+		margin: auto !important;
+		left: 0px !important;
+	}
+	.garantBox p {
+		font-size: 2vw !important;
+		width: 70%;
+		margin: auto;
+	}
+	.gallaryParamWrapp1, .gallaryParamWrapp2, .gallaryParamWrapp3{
+		min-height: inherit;
+		margin: auto;
+	}
+	#container.flipped #back p,
+	#container2.flipped #back2 p,
+	#container3.flipped #back3 p {
+		font-size: 3vh !important;
+	}
+	.formWrapper1{
+		max-width: 80% !important;
+	}
+	.formWrapper1 p {
+		font-size: 1.2vh !important;
+	}
+	h1, h2, h3, span {
+		font-size: 2vw !important;
+	}
+	p{
+		font-size: 6vw !important;
+	}
+	.remont p {
+		font-size: 2vw !important;
+	}
+	.formPresent{
+		width: 100% !important;
+	}
+	.formWrapper p {
+		font-size: 2vw !important;
+	}
+	.wrapp,
+	.wrapp1{
+		min-width: auto;
+	}
+}
+@media (max-width: 450px){
+	.otherUslugiBox {
+		width: auto;
+	}
+	span{
+		font-size: 4vw !important;
+	}
+	.gallaryBox{
+		height: 700px;
+	}
+	.gallaryBox .detailProject{
+		top: 320px;
+		padding:0 15px;
+	}
+	#toTop {
+		left: 5%;
+	}
+	.bigImg .arrowLeft, .bigImg .arrowRight {
+		top: 15%;
+		width: 20px;
+		height: 40px;
+		min-height: auto;
+	}
+	#menu{
+		height: auto;
+	}
+	#menu .yellowBg{
+		width: auto;
+		height: auto;
+	}
+	#menu nav{
+		height: auto;
+		background: #484846;
+	}
+	#menu ul{
+		min-width: auto !important;
+	}
+	#head .logo{
+		width: 50%;
+		margin: auto;
+	}
+	.yellowButton{
+		height: inherit;
+		width: inherit;
+	}
+	.calculatorForm select, .calculatorForm input {
+		width: auto;
+	}
+	.garantBox p{
+		font-size: 4vw !important;
+	}
+	h3 {
+		font-size: 5vw !important;
+	}
+	#calc{
+		width: auto;
+	}
+	#calc {
+		position: relative;
+		background: url(../img/calckBg.png);
+		background-repeat: round;
+		background-size: cover;
+		height: auto;
+	}
+	#calc a {
+		margin: 0px;
+		width: 80%;
+	}
+	.calculatorBox {
+		background: url(../img/calckBoxBg.jpg);
+		height: 100%;
+		background-repeat: round;
+		background-size: cover;
+		z-index: 1;
+	}
+	.calculatorForm .formElem {
+		float: left;
+		height: 55px;
+		margin-top: 0px;
+	}
+	.stylishDesign a, .container a, .container2 a, .container3 a, .goodRepair a, .sureznoRepair a{
+		width: auto;
+		background-size: contain;
+		background-repeat: round;
+	}
+	.border1 .BigBorder, .border2 .BigBorder, .border3 .BigBorder {
+		left: 0px;
+		width: 100% !important;
+		margin: auto;
+		text-align: center;
+		font-size: 6vw !important;
+		text-indent: 0px;
+	}
+	.border1 .littleText, .border2 .littleText, .border3 .littleText {
+		font-size: 5vw !important;
+	}
+	.border1,
+	.border2,
+	.border3{
+		width: auto;
+		height: auto;
+	}
+	.mainCaption {
+		font-size: 4vw !important;
+	}
+	.vidos2{
+		margin-top:40px;
+	}
+	#advantages p {
+		font-size: 4vw !important;
+	}
+	.remontWrapper ul{
+		max-width: inherit;
+		height: auto;
+		background-repeat: inherit;
+	}
+	.remontWrapper{
+		width: auto;
+	}
+	.remont h1{
+		font-size: 4vw !important;
+	}
+	.remont p{
+		font-size: 5vw !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

@@ -1,0 +1,335 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201901 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.art-alliance.hit-tovar.top.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2006                
+POS_TIME 2680                
+POS_VISITOR 11224               
+POS_DAY 11575               
+POS_DOMAIN 3273                
+POS_LOGIN 3506                
+POS_ROBOT 3661                
+POS_WORMS 4015                
+POS_EMAILSENDER 4146                
+POS_EMAILRECEIVER 4289                
+POS_SESSION 11834               
+POS_SIDER 12019               
+POS_FILETYPES 4424                
+POS_DOWNLOADS 4688                
+POS_OS 4874                
+POS_BROWSER 4963                
+POS_SCREENSIZE 5156                
+POS_UNKNOWNREFERER 5230                
+POS_UNKNOWNREFERERBROWSER 5344                
+POS_ORIGIN 5426                
+POS_SEREFERRALS 5563                
+POS_PAGEREFS 5707                
+POS_SEARCHWORDS 5881                
+POS_KEYWORDS 6033                
+POS_MISC 2343                
+POS_ERRORS 6092                
+POS_CLUSTER 3362                
+POS_SIDER_404 6194                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190128112112 2 153 9706209727475
+FirstTime 20190118125116
+LastTime 20190127214946
+LastUpdate 20190129053217 2 0 2 0 0
+TotalVisits 12                  
+TotalUnique 4                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 8                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 11 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 0 0 0 0 0 0
+11 8 175 1570624 9 21 8297
+12 24 444 37406812 10 301 246637
+13 0 2 3538 1 2 19803
+14 6 161 4725320 2 5 1985
+15 5 160 4508104 3 7 12453
+16 0 0 0 0 0 0
+17 2 11 746101 6 13 5159
+18 0 0 0 0 0 0
+19 0 0 0 0 0 0
+20 49 2305 730146804 42 90 39660
+21 24 833 219281103 26 55 24085
+22 1 155 0 4 25 492237
+23 0 2 3538 0 0 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 119 4248 527539778
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 6
+facebook 20 44293 20190121123430 0
+googlebot 18 297910 20190125222139 1
+yandex 5 30636 20190128112108 3
+cfnetwork 3 1769 20190123201308 0
+ia_archiver 2 183136 20190120221931 1
+mediapartners\-google 1 9604 20190125222130 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+css 211 1855806 0 0
+png 1294 9006321 0 0
+woff2 54 1315750 0 0
+woff 27 395696 0 0
+php 15 13225 0 0
+html 23 175005 0 0
+mp4 17 470852166 0 0
+jpg 1668 37499706 0 0
+js 239 1602845 0 0
+gif 700 4823258 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 4
+/robots.txt 5 0 1832
+/wp-content/uploads/repairs_v002.mp4 0 6 12850152
+/video/remont2.mp4 0 36 200198806
+/video/remont.mp4 0 43 257803208
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 4
+macosx 855
+linuxandroid 1804
+winnt 1672
+Unknown 2
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 7
+chrome71.0.3578.99 1803
+chrome70.0.3538.110 1
+chrome71.0.3578.98 1664
+chrome45.0.2454.101 4
+netscape5.0 2
+safari12.0 851
+chrome65.0.3325.230 8
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+Mozilla/5.0 20190123201415
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 16 42
+From1 2 2
+From2 0 0
+From3 1 1
+From4 100 4288
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://m.facebook.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+206 4 77948
+404 455 193520
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 46
+/wp-content/plugins/contact-form-7/includes/js/scripts.js 8 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0012_IMG_0576.jpg 7 -
+/fonts/intro.ttf 47 http://art-alliance.hit-tovar.top/css/fonts.css
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0004_IMG_0520.jpg 7 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0014_IMG_0615.jpg 7 -
+/wp-content/plugins/easy-modal/assets/scripts/jquery.transit.min.js 8 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0015_IMG_0624.jpg 7 -
+/img/blank.png 36 http://art-alliance.hit-tovar.top/
+/wp-includes/js/jquery/ui/core.min.js 6 -
+/wp-content/plugins/easy-modal/assets/styles/easy-modal-site.css 5 -
+/thanks.html 1 http://art-alliance.hit-tovar.top/send.php
+/img/phoneMenu.png 23 http://art-alliance.hit-tovar.top/css/primary.css
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0011_IMG_0593.jpg 7 -
+/wp-content/uploads/%D0%96%D0%9A-%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%B0%D1%8F-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0-%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%824-1.jpg 8 -
+/wp-content/uploads/smile_fonts/Defaults/Defaults.css 5 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0017_IMG_0608.jpg 7 -
+/video/remont.ogg 1 -
+/wp-content/themes/Impreza/css/style.min.css 5 -
+/wp-includes/js/jquery/ui/position.min.js 8 -
+/wp-content/themes/Impreza/css/responsive.min.css 5 -
+/wp-includes/js/wp-emoji-release.min.js 4 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0005_IMG_0788.jpg 7 -
+/img/gallery/01/k11.jpg 5 http://art-alliance.hit-tovar.top/
+/wp-content/plugins/contact-form-7/includes/css/styles.css 5 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0016_IMG_0621.jpg 7 -
+/wp-includes/js/jquery/jquery.js 5 -
+/wp-content/plugins/easy-modal/assets/scripts/easy-modal-site.js 8 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0000_IMG_0535.jpg 7 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0018_IMG_7470.jpg 7 -
+/wp-content/themes/Impreza/js/us.core.min.js 8 -
+/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/ultimate.min.css 5 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0007_IMG_0812.jpg 7 -
+/fonts/intro.woff 47 http://art-alliance.hit-tovar.top/css/fonts.css
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0019_IMG_7471.jpg 7 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0020_IMG_7477.jpg 7 -
+/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate.min.js 7 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0002_IMG_0547.jpg 8 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0009_IMG_0881.jpg 8 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0003_IMG_0534.jpg 7 -
+/img/advantagesBg.jpg 34 http://art-alliance.hit-tovar.top/css/primary.css
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0013_IMG_0580.jpg 7 -
+/wp-content/uploads/%D0%96%D0%9A-%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%B0%D1%8F-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0-%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%822-1.jpg 8 -
+/wp-content/uploads/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5-%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81-14_0010_IMG_0845.jpg 8 -
+/wp-content/uploads/%D0%96%D0%9A-%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%B0%D1%8F-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0-%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%825-1.jpg 8 -
+/wp-content/uploads/%D0%96%D0%9A-%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%B0%D1%8F-%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0-%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%823-1.jpg 8 -
+/wp-includes/js/wp-embed.min.js 8 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 8
+178.150.118.73 98 2702 383896946 20190127214946
+109.86.243.124 9 489 81641873 20190123204417
+66.102.9.157 7 410 58708016 20190123221045
+66.102.9.130 5 346 1587799 20190123202625
+109.86.242.111 0 2 3538 
+37.57.134.227 0 2 3538 
+178.133.7.187 0 1 1769 
+66.102.9.159 0 381 1696299 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 8
+20190118 12 123 27771333 1
+20190121 17 481 14143583 2
+20190122 6 161 4725320 1
+20190123 62 2956 943984337 4
+20190124 0 4 7076 0
+20190125 5 160 772009 1
+20190126 10 186 2316725 2
+20190127 7 177 4671561 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+1h+ 2
+5mn-15mn 3
+0s-30s 4
+15mn-30mn 1
+2mn-5mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 15
+/css/fonts/slick.woff 24 16560 0 7
+/ 18 164404 6 0
+/fonts/Din/PFDinDisplayPro-Light-webfont.woff2 12 263400 1 0
+/send.php 12 3873 1 0
+/fonts/Din/PFDinDisplayPro-Bold-webfont.woff2 12 254040 4 0
+/fonts/Din/PFDinDisplayPro-Reg-webfont.woff2 12 253224 0 1
+/fonts/Din/PFDinDisplayPro-Med-webfont.woff2 12 254760 0 0
+/thanks.html 5 10601 0 0
+/thanks.php 3 9352 0 3
+/wp-content/themes/Impreza/fonts/fa-light-300.woff2 2 106844 0 0
+/wp-content/themes/Impreza/fonts/fa-regular-400.woff 1 130488 0 0
+/wp-content/themes/Impreza/fonts/fa-solid-900.woff 1 108964 0 1
+/wp-content/themes/Impreza/fonts/fa-light-300.woff 1 139684 0 0
+/wp-content/themes/Impreza/fonts/fa-regular-400.woff2 2 100119 0 0
+/wp-content/themes/Impreza/fonts/fa-solid-900.woff2 2 83363 0 0
+END_SIDER
