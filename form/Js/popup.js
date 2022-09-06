@@ -16,13 +16,13 @@ openPopUp.addEventListener('click', function(e){
 
 openPopUpTwo.addEventListener('click', function(e){
     e.preventDefault();
-    popUp.classList.remove('popup__active');
+    
     popUpTwo.classList.add('popup__active');
 })
 
 openPopUpThree.addEventListener('click', function(e){
     e.preventDefault();
-    popUpTwo.classList.remove('popup__active');
+   
     popUpThree.classList.add('popup__active');
     
 })
