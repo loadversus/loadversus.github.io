@@ -133,7 +133,7 @@ h1,h2,h3,h4,h5,h6,p {
 .popup__active {
     z-index: 100;
     opacity: 1;
-    transition: opacity 0.4s linear;
+    transition: opacity 0.3s linear;
     transform: translateX(0%);
 }
 
