@@ -1,0 +1,943 @@
+/**** Обнуляющие стили ****/
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: #F9F9F9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    display: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+/**** Обнуляющие стили ****/
+
+
+
+.main_container {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.container {
+    max-width: 1200px;
+
+}
+
+.header {
+    margin: 15px 0 30px 0;
+}
+
+.sidebar {
+    margin: 48px 38px 0 22px;
+    display: inline-block;
+}
+
+.sidebar_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar_text p:first-of-type {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EE1D25;
+}
+
+.sidebar_text p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.sidebar_text span {
+    font-weight: 700;
+    color: #167F6B;
+}
+
+.header_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header_info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.header_info p:first-of-type {
+    display: inline-block;
+}
+
+.header_info a {
+    color: #0061A3;
+    display: inline-block;
+}
+
+.header_info span {
+    font-weight: 700;
+}
+
+.socials_icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.lang_changer {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 10px;
+}
+
+.lang_changer select {
+    width: 84px;
+    border: none;
+}
+
+.navigation_container {
+    background: #F30000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+}
+
+.link {
+    padding: 0 25px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.link a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+a.active {
+    text-decoration-line: underline;
+}
+
+.link_account {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #0061A3;
+    border-radius: 8px;
+    padding: 7px 38px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.cards_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    font-family: 'Roboto';
+    font-style: normal;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 5px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 6px 15px;
+    min-height: 95px;
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    display: inline-block;
+    margin-right: 102px;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #5F5F5F;
+    max-width: fit-content;
+    margin-top: 5px;
+}
+
+.card a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #0061A3;
+    display: inline-block;
+}
+
+.lottery_container {
+    margin: 75px 0;
+}
+
+.lottery_wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.lottery_card {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    width: calc(100%/3);
+}
+
+.lottery_card_img {
+    margin-right: 23px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 2px solid #E0E0E0;
+    border-radius: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 141px;
+    height: 80px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lottery_title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.lottery_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.lot_text {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.lot_text p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.lot_win {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 22px;
+    color: #13902A;
+}
+
+.btn_yellow {
+    background: #F7D300;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    padding: 6px 50px;
+}
+
+.lottery_card_bottom {
+    background: #0061A3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 0;
+    column-gap: 40px;
+    padding-left: 12px;
+    border-radius: 0 0 8px 8px;
+}
+
+.lottery_timer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    align-items: center;
+}
+
+.lottery_timer svg {
+    width: 18px;
+    height: 18px;
+}
+
+.lottery_timer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.online_lottery_title {
+    width: 100%;
+    padding: 10.5px 0;
+    background: #F30000;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25.5px;
+}
+
+.online_lottery_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.online_lottery_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 13px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    min-width: 208px;
+    position: relative;
+    flex: 1;
+}
+
+.online_lottery_star {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    width: 16px;
+    height: 16px;
+}
+
+.logos_frame {
+    width: 95px;
+    height: 95px;
+    border: 2px solid #E0E0E0;
+    border-radius: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lot_text.type_2 {
+    column-gap: 3px;
+    margin: 28px 0 8px 0;
+}
+
+.online_lottery_win {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.lottery_timer.type_2 {
+    margin-bottom: 12px;
+}
+
+.lottery_timer.type_2>p,
+.lottery_timer.type_2>svg {
+    color: #0061A3;
+    fill: #0061A3;
+}
+
+.online_lottery_link {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.online_lottery_link a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #0061A3;
+}
+
+.winners_wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin: 75px 0;
+}
+
+.info_container {
+    flex-basis: 60%;
+}
+
+.winners_card {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.winners_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.winners_title p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.winners_title span {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 22px;
+    color: #0061A3;
+}
+
+.winners_story {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 19px;
+
+
+}
+
+.winners_story div {
+    margin-bottom: 31px;
+}
+
+.winners_story div h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.winners_story div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 31px;
+}
+
+.winners_story a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    color: #0061A3;
+    text-align: center;
+}
+
+.winners_card_bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.numbers_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 70px;
+}
+
+.btn_yellow.type_2 {
+    padding: 10px 86px;
+}
+
+.winners_card_bottom p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+}
+
+.numbers span {
+    background: #F30000;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.date {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: left;
+    color: #000000;
+    margin-left: 220px;
+}
+
+.winners_container {
+    flex: 1;
+}
+
+.winners_card.type_2 {
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.winners_card.type_2>p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.tickets p:nth-child(1) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.tickets p:nth-child(2) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.winners_stat_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 30px 0;
+}
+
+.winners_stat {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 10px 0;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+}
+
+
+.winner_date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.winner_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.winner_name p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.winner_info {
+    color: #5F5F5F;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.faq_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion_item {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion_item_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.accordion_item_trigger {
+    cursor: pointer;
+    padding: 3px 0px 10px 20px;
+    border-bottom: 1px solid #E0E0E0;
+    display: block;
+    position: relative;
+}
+
+.accordion_arrow {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.accordion_item_trigger p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0061A3;
+}
+
+.accordion_item_content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5F5F5F;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    height: 0;
+}
+
+
+
+.accordion_item_input:checked~.accordion_item_content {
+    visibility: visible;
+    opacity: 1;
+    padding: 20px;
+    height: auto;
+}
+
+.faq_container h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+
+
+.footer {
+    background: url('https://i.ibb.co/4t6hG7n/footer-bg.png') no-repeat;
+    background-position-y: 75px;
+    padding-top: 209px;
+    padding-bottom: 55px;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 192px;
+    align-items: baseline;
+    margin-bottom: 55px;
+}
+
+
+.footer_text {
+    width: 249px;
+}
+
+
+
+.footer_links p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer_links a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.footer_links a:last-of-type {
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer_text p:nth-child(1) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.footer_text p:nth-child(2) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.footer_text p:nth-child(3) {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.footer_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    margin: 0px 143px 40px 108px;
+}
+
+.footer_socials_wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.footer_payments p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.logos_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.payment_logos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.security_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 10px;
+}
+
+.live_whatsapp {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.live_whatsapp_text p:first-child {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.live_whatsapp_text p:last-child {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #5F5F5F;
+}
+
+
+
+/* Media */
+
+@media(max-width: 1540px) {
+    .main_container {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container_borders {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
